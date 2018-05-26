@@ -22,18 +22,18 @@
             },
             {
                 "command": "extension.runDclDeploy",
-                "title": "DCL Deploy",
+                "title": "DCL Deploy"
             }
         ],
         "menus": {
             "touchBar": [
                 {
                     "command": "extension.runDclPreview",
-                    "group": "decentraland",
+                    "group": "decentraland"
                 },
                 {
                     "command": "extension.runDclDeploy",
-                    "group": "decentraland",
+                    "group": "decentraland"
                 }
             ]
         }
