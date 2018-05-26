@@ -11,16 +11,32 @@
         "Other"
     ],
     "activationEvents": [
-        "onCommand:extension.sayHello"
+        "workspaceContains:**/scene.json"
     ],
     "main": "./out/extension",
     "contributes": {
         "commands": [
             {
-                "command": "extension.sayHello",
-                "title": "Hello World"
+                "command": "extension.runDclPreview",
+                "title": "DCL Preview"
+            },
+            {
+                "command": "extension.runDclDeploy",
+                "title": "DCL Deploy",
             }
-        ]
+        ],
+        "menus": {
+            "touchBar": [
+                {
+                    "command": "extension.runDclPreview",
+                    "group": "decentraland",
+                },
+                {
+                    "command": "extension.runDclDeploy",
+                    "group": "decentraland",
+                }
+            ]
+        }
     },
     "scripts": {
         "vscode:prepublish": "npm run compile",
