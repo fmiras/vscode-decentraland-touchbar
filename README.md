@@ -1,6 +1,10 @@
+[![Marketplace Version](https://vsmarketplacebadge.apphb.com/version-short/fmiras.vscode-decentraland-touchbar.svg)](https://marketplace.visualstudio.com/items?itemName=fmiras.vscode-decentraland-touchbar)
+
 # VSCode Decentraland Touchbar
 
 vscode plugin to add touchbar buttons to trigger [Decentraland SDK](https://github.com/decentraland/cli) commands.
+
+![Decentraland Touchbar](https://i.imgur.com/Qe45P4J.png)
 
 ## Features
 
