@@ -17,12 +17,14 @@
     "contributes": {
         "commands": [
             {
-                "command": "extension.runDclPreview",
-                "title": "DCL Preview"
+                "command": "extension.runADclPreview",
+                "title": "A - DCL Preview",
+                "icon": "./assets/decentraland-preview.png"
             },
             {
-                "command": "extension.runDclDeploy",
-                "title": "DCL Deploy"
+                "command": "extension.runBDclDeploy",
+                "title": "B - DCL Deploy",
+                "icon": "./assets/decentraland-deploy.png"
             }
         ],
         "menus": {
