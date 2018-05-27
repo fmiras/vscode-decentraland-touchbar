@@ -1,57 +1,59 @@
 {
-    "name": "vscode-decentraland-touchbar",
-    "displayName": "Decentraland Touchbar Buttons",
-    "description": "Add some useful Decentraland developer buttons to you Macbook's Touchbar",
-    "version": "0.0.1",
-    "publisher": "fmiras",
-    "engines": {
-        "vscode": "^1.23.0"
-    },
-    "categories": [
-        "Other"
+  "name": "vscode-decentraland-touchbar",
+  "displayName": "Decentraland Touchbar Buttons",
+  "description": "Add some useful Decentraland developer buttons to you Macbook's Touchbar",
+  "version": "0.0.1",
+  "publisher": "fmiras",
+  "engines": {
+    "vscode": "^1.23.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "workspaceContains:**/scene.json"
+  ],
+  "main": "./out/extension",
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.runDclPreview",
+        "title": "A - DCL Preview",
+        "icon": "./assets/decentraland-preview.png"
+      },
+      {
+        "command": "extension.runDclDeploy",
+        "title": "B - DCL Deploy",
+        "icon": "./assets/decentraland-deploy.png"
+      }
     ],
-    "activationEvents": [
-        "workspaceContains:**/scene.json"
-    ],
-    "main": "./out/extension",
-    "contributes": {
-        "commands": [
-            {
-                "command": "extension.runADclPreview",
-                "title": "A - DCL Preview",
-                "icon": "./assets/decentraland-preview.png"
-            },
-            {
-                "command": "extension.runBDclDeploy",
-                "title": "B - DCL Deploy",
-                "icon": "./assets/decentraland-deploy.png"
-            }
-        ],
-        "menus": {
-            "touchBar": [
-                {
-                    "command": "extension.runDclPreview",
-                    "group": "decentraland"
-                },
-                {
-                    "command": "extension.runDclDeploy",
-                    "group": "decentraland"
-                }
-            ]
+    "menus": {
+      "touchBar": [
+        {
+          "command": "extension.runDclPreview",
+          "group": "decentraland"
+        },
+        {
+          "command": "extension.runDclDeploy",
+          "group": "decentraland"
         }
-    },
-    "scripts": {
-        "vscode:prepublish": "npm run compile",
-        "compile": "tsc -p ./",
-        "watch": "tsc -watch -p ./",
-        "postinstall": "node ./node_modules/vscode/bin/install",
-        "test": "npm run compile && node ./node_modules/vscode/bin/test"
-    },
-    "devDependencies": {
-        "typescript": "2.6.1",
-        "vscode": "1.1.6",
-        "tslint": "5.8.0",
-        "@types/node": "7.0.43",
-        "@types/mocha": "2.2.42"
+      ]
     }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "postinstall": "node ./node_modules/vscode/bin/install",
+    "lint": "tslint -c tslint.json 'src/**/*.ts'",
+    "test": "npm run compile && node ./node_modules/vscode/bin/test"
+  },
+  "devDependencies": {
+    "@types/mocha": "2.2.42",
+    "@types/node": "7.0.43",
+    "dcl-tslint-config-standard": "1.0.1",
+    "tslint": "5.8.0",
+    "typescript": "2.6.1",
+    "vscode": "1.1.6"
+  }
 }
