@@ -4,6 +4,10 @@
   "description": "Add some useful Decentraland developer buttons to you Macbook's Touchbar",
   "version": "0.1.0",
   "publisher": "fmiras",
+  "repository": {
+    "url": "https://github.com/fmiras/vscode-decentraland-touchbar",
+    "type": "git"
+  },
   "engines": {
     "vscode": "^1.23.0"
   },
