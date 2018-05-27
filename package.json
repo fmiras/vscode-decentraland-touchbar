@@ -2,7 +2,7 @@
   "name": "vscode-decentraland-touchbar",
   "displayName": "Decentraland Touchbar Buttons",
   "description": "Add some useful Decentraland developer buttons to you Macbook's Touchbar",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "publisher": "fmiras",
   "engines": {
     "vscode": "^1.23.0"
