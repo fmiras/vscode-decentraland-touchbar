@@ -4,6 +4,14 @@
   "description": "Add some useful Decentraland developer buttons to you Macbook's Touchbar",
   "version": "0.1.0",
   "publisher": "fmiras",
+  "icon": "./assets/decentraland-icon.png",
+  "keywords": [
+    "decentraland",
+    "touchbar",
+    "blockchain",
+    "vr",
+    "dcl"
+  ],
   "repository": {
     "url": "https://github.com/fmiras/vscode-decentraland-touchbar",
     "type": "git"
